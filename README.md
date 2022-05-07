@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+##Props for Button:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+####label: string or React node:
+  The label to be rendered on the button. It can be string or another React component.
+####You can have multiple predefined sizes of the button by supplying on of the following props:
+####small: boolean:
+  One size variant of the button.
+####medium: boolean:
+  One size variant of the button.
+####large: PropTypes.bool:
+  One size variant of the button.
 
-## Available Scripts
+####disabled: boolean: 
+  Specify if the button is disabled or not.
 
-In the project directory, you can run:
+####fill: boolean
 
-### `npm start`
+####icon: element: 
+  The icon to be shown in the button. 
+  
+####onClick: function: 
+  Defines the behaviour on click.
+  
+####onMouseDown: function
+ Define the behaviour on mouseDown
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+####onMouseUp: function
+  Define the behaviour on mouseUp
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+####onFocus: function
+  Define the behaviour on focus
 
-### `npm test`
+####onBlur: function
+  Define the behaviour on blur.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+####className: string: 
+  Trough this prop, you can add additional styles to the button.
+####plain: boolean
+  If true, will render a plain button.
 
-### `npm run build`
+####reverse: boolean: 
+  The label and icon are rendered depending on this props.
+  * true: label-icon
+  * false: icon-label
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+####This button offers the following color scheme:
+* primary #F194B4
+* secondary #F1E494
+* accent #94D9F1
+* critical #FF324D
+You can set to use each color by specifying the onw of these props:
+####critical: boolean
+####primary: boolean
+####secondary: boolean
+####accent: boolean
+####type: string
+ Can be one of: ["button", "reset", "submit"]),

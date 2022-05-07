@@ -1,0 +1,97 @@
+$primary: #F194B4;
+$secondary: #F1E494;
+$accent: #94D9F1;
+$critical: #FF324D;
+$textColor: #1C1115;
+
+
+.buttonContainer{
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  height: min-content;
+  max-width: 384px;
+  color: $textColor;
+}
+
+.box{
+  background-color: white;
+  display: flex;
+  gap: 12px;
+  border: 2px $primary solid;
+  border-radius: 5px;
+}
+
+.plain{
+  background-color: unset;
+  border: none;
+  font-weight: unset;
+  display: unset;
+}
+
+.small{
+  font-size: 14px;
+  padding: 4px 20px;
+  line-height: 20px;
+}
+
+.medium{
+  font-size: 18px;
+  padding: 4px 22px;
+  line-height: 24px;
+}
+
+.large{
+  font-size: 22px;
+  padding: 8px 32px;
+  line-height: 28px;
+}
+
+.disabled{
+  opacity: 0.5;
+}
+
+.icon{
+  vertical-align: bottom;
+}
+
+.label{
+
+}
+
+.critical {
+  border-color: $critical;
+  background-color: white;
+}
+.critical.fill{
+    background-color: $critical;
+}
+
+
+.focus{
+
+}
+
+.primary {
+  border-color: $primary;
+  background-color: $primary;
+}
+
+
+.secondary {
+  border-color: $secondary;
+  background-color: white;
+}
+
+.secondary.fill {
+    background-color: $primary;
+}
+
+.accent {
+  border-color: $accent;
+  background-color: white;
+}
+.accent.fill{
+    background-color: $accent;
+  }
