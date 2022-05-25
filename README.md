@@ -40,7 +40,8 @@ However, the functionality that you will pass through the function props will be
 #### className: string: 
   Trough this prop, you can add additional styles to your button.
 #### plain: boolean
-  If true, will render a plain, simple button.
+  If true, will render a plain, simple button. 
+  This will override any other out-of-the-box styling. So, if you pass other styling props together with `plain`, the result will still be a plain button.
 
 #### reverse: boolean
   The label and icon are rendered depending on this prop.
@@ -63,7 +64,7 @@ You can set each color by specifying one of these props:
 ![img_4.png](img_4.png)
 - secondary: boolean
 
-![img_5.png](img_5.png)
+![img_5.png](img_5.png)  ![img_9.png](img_9.png)
 - accent: boolean
 
 ![img_6.png](img_6.png)  ![img_8.png](img_8.png)

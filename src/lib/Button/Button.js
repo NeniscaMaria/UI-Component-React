@@ -29,7 +29,7 @@ const Button = (props) => {
   const [focus, setFocus] = useState(false);
 
   const buttonIcon = icon && <span className={"icon"}>{icon}</span>;
-  const buttonLabel = label && <span className={"label"}>{label}</span>;
+  const buttonLabel = label && <span>{label}</span>;
 
   const onMouseDown = (event) => {
     const { onMouseDown } = restProps;
@@ -72,13 +72,13 @@ const Button = (props) => {
       ["small"]: small,
       ["medium"]: medium,
       ["large"]: large,
-      ["critical"]: critical,
+      ["critical"]: critical && label,
       ["focus"]: focus,
-      ["primary"]: primary,
-      ["secondary"]: secondary,
-      ["accent"]: accent,
+      ["primary"]: primary && label,
+      ["secondary"]: secondary && label,
+      ["accent"]: accent && label,
       ["disabled"]: !onClick || disabled,
-      ["fill"]: fill,
+      ["fill"]: fill && label,
       ["plain"]: plain || Children.count(children) > 0 || (icon && !label),
     },
     className

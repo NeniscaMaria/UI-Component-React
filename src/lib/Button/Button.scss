@@ -56,10 +56,6 @@ $textColor: #1C1115;
   vertical-align: bottom;
 }
 
-.label{
-
-}
-
 .critical {
   border-color: $critical;
   background-color: white;
@@ -68,16 +64,14 @@ $textColor: #1C1115;
     background-color: $critical;
 }
 
-
 .focus{
-
+  border-width: 4px;
 }
 
 .primary {
   border-color: $primary;
   background-color: $primary;
 }
-
 
 .secondary {
   border-color: $secondary;
