@@ -1,9 +1,16 @@
-This is a library that provides one common component for the UI: a button. By utilizing the below props, you can customize the behavior and look of your button!
+This is a library that provides one common component for the UI: a spring-themed button. By utilizing the below props, you can customize the behavior and look of your button!
 
 ## Props for Button:
 
+#### icon: element:
+An icon to be shown in the button.
+
 #### label: string or React node:
   The label to be rendered on the button. It can be string or another React component.
+
+`Observation: If no label is supplied, but an icon is given, no out-of-the-box styling will be applied on the component.
+However, the functionality that you will pass through the function props will be present.`
+
 #### You can have multiple predefined sizes of the button by supplying on of the following props:
 - small: boolean
 - medium: boolean
@@ -14,9 +21,6 @@ This is a library that provides one common component for the UI: a button. By ut
 
 #### fill: boolean
    Specify if you want the button to be filled with color or not.
-
-#### icon: element: 
-  An icon to be shown in the button. 
   
 #### onClick: function: 
   Defines the behaviour on click.
@@ -27,7 +31,7 @@ This is a library that provides one common component for the UI: a button. By ut
 #### onMouseUp: function
   Define the behaviour on mouseUp
 
-####onFocus: function
+#### onFocus: function
   Define the behaviour on focus
 
 #### onBlur: function
@@ -38,13 +42,13 @@ This is a library that provides one common component for the UI: a button. By ut
 #### plain: boolean
   If true, will render a plain, simple button.
 
-#### reverse: boolean: 
+#### reverse: boolean
   The label and icon are rendered depending on this prop.
   * true: label-icon
   * false: icon-label
 
 
-#### This button offers the following color scheme:
+#### This button offers the following pastel color scheme:
 * primary #F194B4
 * secondary #F1E494
 * accent #94D9F1
@@ -52,9 +56,17 @@ This is a library that provides one common component for the UI: a button. By ut
 
 You can set each color by specifying one of these props:
 - critical: boolean
-- primary: boolean
+
+![img_2.png](img_2.png) ![img_7.png](img_7.png)
+- primary: boolean (this button option will be filled by default)
+
+![img_4.png](img_4.png)
 - secondary: boolean
+
+![img_5.png](img_5.png)
 - accent: boolean
+
+![img_6.png](img_6.png)  ![img_8.png](img_8.png)
 #### type: string
  Specifies the type of the button. It can be one of: ["button", "reset", "submit"])
  
@@ -62,3 +74,11 @@ You can set each color by specifying one of these props:
 This creates a medium-sized button, filled with the accent color that has the text `Click me!` inside:
 
 `<Button medium label={"Click me!"} accent fill />`
+
+![img.png](img.png)
+
+This creates a simple clickable icon:
+
+`<Button medium icon={<img width="14px" src={EditIcon} alt={"edit"}/>} />`
+
+![img_1.png](img_1.png)
