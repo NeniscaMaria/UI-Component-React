@@ -1,5 +1,8 @@
-This is a library that provides one common component for the UI: a spring-themed button. By utilizing the below props, you can customize the behavior and look of your button!
+This is a library that provides one common component for the UI: a spring-themed button. 
 
+By utilizing the below props, you can customize the behavior and look of your button!
+
+A demo app can be found [here](https://github.com/NeniscaMaria/UI-Component-Demo-App/tree/master).
 ## Props for Button:
 
 #### icon: element:
