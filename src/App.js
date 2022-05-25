@@ -1,5 +1,5 @@
 import "./App.css";
-import Button from "./Button/Button";
+import Button from "./lib/Button/Button";
 import React from "react";
 import EditIcon from "./assets/editIcon.svg";
 
